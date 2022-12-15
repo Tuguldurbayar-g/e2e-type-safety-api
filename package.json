@@ -1,0 +1,31 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev src/index.ts",
+    "build": "npm i && npx prisma generate"
+  },
+  "prisma": {
+    "seed": "ts-node-dev prisma/seed.ts"
+  },
+  "dependencies": {
+    "@graphql-yoga/node": "^3.1.1",
+    "@pothos/core": "^3.23.2",
+    "@pothos/plugin-prisma": "^3.38.1",
+    "@prisma/client": "^4.7.1",
+    "graphql": "^16.6.0",
+    "graphql-scalars": "^1.20.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.15",
+    "prisma": "^4.7.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.4"
+  }
+}
